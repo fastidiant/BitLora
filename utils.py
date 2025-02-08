@@ -99,7 +99,7 @@ def add_lora_layers(
                         dtype=dtype
                     )   
                 elif lora_type == "aplinear":
-                    lora_layer = APCSLoraLayer  (
+                    lora_layer = APLoraLayer  (
                         base_layer=module,
                         rank=rank,
                         alpha=alpha,
